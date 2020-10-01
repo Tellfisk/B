@@ -11,10 +11,9 @@ public class PollController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @GetMapping("/vote")
-    public Vote greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+    @GetMapping("/poll")
+    public Vote poll(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Vote(counter.incrementAndGet(), String.format(template, name));
     }
-
 
 }
