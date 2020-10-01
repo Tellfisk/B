@@ -21,15 +21,15 @@ public class Main {
          }
          System.out.println("Size: " + personList.size());
 
-        com.example.B.User u = new com.example.B.User();
+        User u = new User();
         u.setAdmin(false);
         u.setUserName("Jarle");
         u.setPassword("mos");
 
-        com.example.B.Poll poll = new com.example.B.Poll();
+        Poll poll = new Poll();
         poll.setName("poll");
 
-        com.example.B.Vote v = new com.example.B.Vote();
+        Vote v = new Vote();
         v.setUser(u);
         v.setYes(false);
 

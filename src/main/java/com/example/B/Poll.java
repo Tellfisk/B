@@ -16,6 +16,10 @@ public class Poll {
 
     public Poll(){}
 
+    public Poll(String name){
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }
